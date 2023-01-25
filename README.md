@@ -4,5 +4,5 @@ Paulo Matias, professor de Ciência da Computação e Engenharia na UFSCar.
 
 # Challenges Resolvidos:
 - [Challenge 18 - Cryptopals](https://github.com/42kkkkkaren/security_challenges/tree/main/Challenge%2018)
-- [Templated - HackTheBox](https://github.com/42kkkkkaren/security_challenges/tree/main/HTB%20-%20Templated%20(web%20security%20challenge))
+- [Templated - HackTheBox](https://github.com/42kkkkkaren/security_challenges/tree/main/Templated%20-%20HTB)
 - Impossible Password - HackTheBox
