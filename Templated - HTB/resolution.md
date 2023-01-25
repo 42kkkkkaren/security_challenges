@@ -1,6 +1,6 @@
 # Challenge “Templated” da plataforma hackthebox: 
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131255607.png)
+![server](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131255607.png)
 
 Primeiramente, ao procurar por pistas pela página web, nota-se a mensagem: “Proudly powered by Flask/Jinja2”.
 
@@ -10,11 +10,11 @@ Primeiramente, ao procurar por pistas pela página web, nota-se a mensagem: “P
 ## **WERKZEUG**
 Pesquisando por fraquezas na library werkzeug, encontra-se que uma vulnerabilidade identificada é a execução remota de código (RCE), é um tipo de vulnerabilidade de segurança que permite que invasores executem código arbitrário em uma máquina remota, conectando-se a ela por meio de redes públicas ou privadas, gerando impactos severos no sistema.
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131853989.png)
+![werkzeug](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131853989.png)
 
 Geralmente, o console está armazenado em http://www.site.com/console.
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131904372.png)
+![console](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131904372.png)
 
 ## **DirBuster**
 É um aplicativo java multi-threaded projetado para diretórios de força bruta e nomes de arquivos em servidores da web. 
@@ -37,14 +37,14 @@ Como sabemos que o servidor está sendo executado no Flask, que é uma bibliotec
 
 Como podemos ver, o output gerado pelo comando é renderizado como template:
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131911301.png)
+![root](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131911301.png)
 
 Dessa forma, ao executar-se o comando “id” da biblioteca os, descobrimos que estamos sob modo de operação root, ou seja, temos permissão de privilégio total. Logo, executamos o comando ls para listar todos os arquivos e diretórios:
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131918997.png)
+![bin boot](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131918997.png)
 
 Como estamos procurando por uma flag, é possível notar um arquivo de texto flag.txt, e ao executar o comando cat para verificarmos o conteúdo obtemos nossa flag:
 
-![wikipedia ctr um](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131924832.png)
+![flag](https://github.com/42kkkkkaren/security_challenges/blob/main/Templated%20-%20HTB/Pictures%20Templated%20HTB/imagem_2023-01-25_131924832.png)
 
 > HTB{t3mpl4t3s_4r3_m0r3_p0w3rfu1_th4n_u_th1nk!}
