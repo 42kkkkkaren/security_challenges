@@ -5,7 +5,7 @@
 Primeiramente, ao procurar por pistas pela página web, nota-se a mensagem: “Proudly powered by Flask/Jinja2”.
 
 **Flask Jinja2**
-É um mecanismo de template da web para a linguagem de programação Python que facilita a criação de páginas HTML. Serve para permitir que as informações trocadas entre uma aplicação escrita em Python e suas páginas HTML seja feita de forma mais simples e intuitiva, garantindo que o desenvolvedor consiga criar templates de forma mais fácil para suas aplicações. Basicamente, quando criamos um template com Jinja2 e incorporamos código Python nas páginas HTML, a própria ferramenta traduz o código Python e incorpora à página HTML, já que o Browser não consegue exibir código diferente do HTML.
+/n É um mecanismo de template da web para a linguagem de programação Python que facilita a criação de páginas HTML. Serve para permitir que as informações trocadas entre uma aplicação escrita em Python e suas páginas HTML seja feita de forma mais simples e intuitiva, garantindo que o desenvolvedor consiga criar templates de forma mais fácil para suas aplicações. Basicamente, quando criamos um template com Jinja2 e incorporamos código Python nas páginas HTML, a própria ferramenta traduz o código Python e incorpora à página HTML, já que o Browser não consegue exibir código diferente do HTML.
 
 **WERKZEUG**
 Pesquisando por fraquezas na library werkzeug, encontra-se que uma vulnerabilidade identificada é a execução remota de código (RCE), é um tipo de vulnerabilidade de segurança que permite que invasores executem código arbitrário em uma máquina remota, conectando-se a ela por meio de redes públicas ou privadas, gerando impactos severos no sistema.
